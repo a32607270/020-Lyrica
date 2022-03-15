@@ -1,3 +1,23 @@
+; 모든 대사 기본은
+1.광기
+2.하고싶은대로
+3.애인, 혹은 비슷한 관계
+4.호감 사모 or 애욕
+5.반발
+6.통상
+
+;구상에 따라 몇몇개는 생략 가능
+
+
+
+
+
+
+
+
+
+
+
 [광기]일 때 고백 차이고 n번째 고백
 n번째 고백일 때 
 광기일때 고백 대충 요약; 리리카의 솔직하지 못한 고백에 아나타가 모른척 하고 계속 놀리기로 하면 거절
@@ -43,9 +63,11 @@ IF TALENT 광기 ;n번째 고백
     
 수락 
     처음 고백때랑 거의 같음
+    도입부만 조금 수정
 
 거절
     처음 고백때랑 거의 같음
+    도입부만 조금 수정
 
     ;이후로 n번째 고백은 다 똑같음
     
@@ -54,7 +76,6 @@ IF TALENT 광기 ;n번째 고백
 ---------------------------------------------------------------------------------------------------------------------  
 
 
-    
 여기부터는 첫 고백 구상    
 ;첫고백 구상에서는 자매 반발 대사 없음
 ;통상 대사에서 붙여나갈 예정
@@ -63,10 +84,82 @@ IF TALENT 광기 ;n번째 고백
 ;여기에서의 리리카는 주인공의 광기 빼고 신경안쓴다
 ;주인공이 자기 자매랑 이상한 관계든 뭐든 신경 안쓴다
 ;솔직하게 자신의 마음을 고백하는 구상
+;광기때와는 다르다, 심정에 변화가 있었기에 하라구로인 면이 조금 
 
 
+;사실상 이 플래그는 데이트 후 첫 키스 구상에서 이어지기 때문에 기본 전제가 자매들 반발, 애인임 
+;자매간 사모, 애욕은 딱히 공인된 관계가 아니라 저 플래그가 안섬, 확인
 
 
+ELSEIF CFLAG[하고싶은대로] 
+    PRINTFORMW "...도착했네, 뭔가 아쉽다"
+    PRINTL
+    PRINTFORMW 
+    PRINTFORMW "저기 %CALLNAMEMASTER%, 할 얘기가 있는데... 혹시 저번에 기억나?"
+    RESETCOLOR
+    PRINTL
+    PRINTFORMW 갑자기 리리카가 뜬구름 잡는 소리를 하였다
+    PRINTFORMW 뭐지? 오늘 데이트에 뭔가 실수했나?
+    PRINTFORMW 그렇다고 하기에는 저번에라는 말을 했고
+    SETCOLOR리리카색
+    PRINTFORMW "기억 못하는거 같네, 됐어 네가 그렇지 뭐"
+    PRINTFORMW "또 나만 진지했네~"
+    RESETCOLOR
+    PRINTL
+    PRINTFORMW 기억을 돌이켜봐도 문제가 있던일은
+    PRINTFORMW 너무 많아서 할 말이 많긴한데 무슨 얘기를 해야하지
+    PRINTFORMW 아무말도 안하면 문제가 생길거 같은데
+    PRINTL
+    PRINTFORMW
+    PRINTFORMW
+    SETCOLOR리리카색
+    PRINTFORMW "아하하, 뭐야 그 얼굴"
+    PRINTFORMW "진짜 몇번봐도 재미있는 표정이네"
+    RESETCOLOR
+    PRINTL
+    PRINTFORMW 지금까지의 분위기와는 다른 웃음기가 어린 목소리였다
+    PRINTFORMW 아마 그렇게 진지한 얘기는 아니었나보지
+    PRINTFORMW 그래서 저번에 있던 일은 대체 뭐였던걸까
+    PRINTFORMW 대화나 이어갈겸 물어보았다
+    PRINTL
+    SETCOLOR리리카색
+    PRINTFORMW "우리 첫키스때, 그얘기야"
+    PRINTFORMW "그때 네가 뭐라뭐라 말했던거 그거에대해 나 나름대로 결론을 내렸거든"
+    PRINTL
+    PRINTFORMW "그래서 나온 결론이 네가 내 자매들이랑 무슨 관계든"
+    PRINTFORMW "나는 내가 하고싶은 대로 한다 그거야"
+    PRINTL
+    PRINTFORMW "네 당당한 태도를 보니 고민하는 내가 바보처럼 보였거든"
+    PRINTFORMW "애초에 나는 인간도 아니고, 그런 관념따위 상관없기도 하고"
+    PRINTFORMW "누나들 때문에 내 감정에 솔직해지지 못하는것도 싫고"
+    RESETCOLOR
+    PRINTL
+    PRINTFORMW 가볍게 물어볼 생각이었는데 생각외로 무거워졌다
+    PRINTFORMW 그렇다고 할까 감정에 솔직해진다는 말은 
+    PRINTL
+    SETCOLOR리리카색
+    PRINTFORMW "너도 이젠 내가 무슨 말을 할지 알겠지?"
+    PRINTL
+    RESETCOLOR
+    PRINTFORMW
+    PRINTL
+    SETCOLOR리리카색
+    PRINTFORMW "좋아해요"
+    PRINTFORMW "당신은 어떻게 생각하나요"
+    PRINTL
+    RESETCOLOR
+    PRINTFORMW 처음이랑은, 정말 많이 달라졌다
+    PRINTFORMW 아직 솔직하지 않은 면은 분명히 있고
+    PRINTFORMW 속에 숨기는 감정도 많긴하지만
+    PRINTFORMW 이런식으로 직접적인 말로 고백할 줄은 몰랐다
+    PRINTFORMW 예전같았으면 아마 고백인듯 고백아닌 고백을 
+    PRINTFORMW
+    PRINTFORMW
+    PRINTFORMW
+    PRINTFORMW
+    PRINTFORMW
+    PRINTFORMW
+    
 
 
 
@@ -83,23 +176,7 @@ IF TALENT 광기 ;n번째 고백
 ;그럼에도 싫지만은 않은 리리카가 솔직하게 고백을 안하는 
 ;그런 느낌의 구상
 
-ELSEIF 자매들이랑 연인 II(기호 틀려서 집가서 교정 필요) 육체관계 파악  
-    PRINTFORMW 
-    PRINTFORMW
-    PRINTFORMW
-    PRINTFORMW
-    PRINTFORMW
-    PRINTFORMW
-    PRINTFORMW
-    PRINTFORMW
-    PRINTFORMW
-    PRINTFORMW
-    PRINTFORMW
-    PRINTFORMW
-    PRINTFORMW
-    PRINTFORMW
-    
-    
+
     
     
     
